@@ -37,8 +37,10 @@ def jcrt(nf, pwd, name, st):       # java creator
 
 def jcrtcou(nf, pwd, name, st):      # java course creator
     NAME = name+'.java'
+    name = NAME
     for i in range(st, nf+st):
         position_char = find_char(name)
+        ex = name[position_char+1:]
         name = f"{name[:position_char]+str(i)+name[position_char+1:]}"
         file = open(pwd+"/"+name, 'x', encoding='utf-8')
         file.write("public class " + name[:position_char]+str(i)+name[position_char+1:-5] + "{\n\npublic static void main(string[] args){\n\n\t}\n}")
@@ -118,7 +120,6 @@ def main():
     elif args.operation == 'jcrt':
         jcrt(args.nf, args.pwd, args.nm, args.st)
     elif args.operation == 'jcrtcou':
-        args.name = "Lezione$CorsoJava8.java"
         jcrtcou(args.nf, args.pwd, args.nm, args.st)
     elif args.operation == 'cppcrt':
         cppcrt(args.nf, args.pwd, args.nm, args.st)
