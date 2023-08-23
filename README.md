@@ -12,10 +12,10 @@ The crt tool based on 4 option:
 4) cppcrt, cpp creator
 
 The crt tool use 4 argument:
-1) -nf(number of files), defualt value: 1
+1) -nf(number of files), default value: 1
 2) -pwd(path where create the files), defualt value: the current path(os.getcwd())
-3) -st(index to start of files), defualt value: 0
-4) -nm(name of files), defualt value: file
+3) -st(index to start of files), default value: 0
+4) -nm(name of files), default value: file
 
 In particular the 4 option create the files with built-in main structure of coding language. 
 
@@ -25,7 +25,7 @@ Startly you can install argsparse package, ![install here](https://pypi.org/proj
 After you have to define the main function. Inside the main function you have to create a object that it pointers to the ArgumentParser, this function will be use to add information of cli-tool.
 ```py
 def main():
-  var = argsparse.AgumentParser()
+  var = argsparse.ArgumentParser()
 ```
 To add option you have to use the add_argument method:
 
@@ -42,7 +42,7 @@ var.add_argument(name, type)
 In my case, I used the optional argument so I did about:
 
 ```py
-var.add_argument(-name, type, default=value, help='about the argument')
+var.add_argument(-name, type, default=value, help='relating to argument')
 ```
 
 Before to install the cli-tool you can write a selection block like this:
