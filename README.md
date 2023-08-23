@@ -3,7 +3,7 @@
 Well, in this reposistory I will answer through a example.
 
 ## Panoramic of project
-This project borned because I wanted to find a way to create faster file with cmd so I thought about file creator.
+This project was born because I was going to find a way to create files quickly with cmd so I make the creator file.
 
 The crt tool based on 4 option:
 1) pycrt, python creator
@@ -21,7 +21,7 @@ In particular the 4 option create the files with built-in main structure of codi
 
 ## How to do create a cli tool with python:
 
-Startly you can install argsparser package, ![install here](https://pypi.org/project/argparse/). You have to define the options of your cli tool as normal function. 
+Startly you can install argsparse package, ![install here](https://pypi.org/project/argparse/). You have to define the options of your cli tool as normal function. 
 After you have to define the main function. Inside the main function you have to create a object that it pointers to the ArgumentParser, this function will be use to add information of cli-tool. 
 ```py
 def main():
