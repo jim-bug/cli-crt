@@ -87,7 +87,7 @@ setup(
 )
 ```
 
-Now you have to install your package locally:
+Now you have to install your package in editable mode or without it:
 
 ```
 pip install -e .
