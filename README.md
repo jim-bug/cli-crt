@@ -22,7 +22,7 @@ In particular the 4 option create the files with built-in main structure of codi
 ## How to do create a cli tool with python:
 
 Startly you can install argsparse package, ![install here](https://pypi.org/project/argparse/). You have to define the options of your cli tool as normal function. 
-After you have to define the main function. Inside the main function you have to create a object that it pointers to the ArgumentParser, this function will be use to add information of cli-tool. 
+After you have to define the main function. Inside the main function you have to create a object that it pointers to the ArgumentParser, this function will be use to add information of cli-tool.
 ```py
 def main():
   var = argsparse.AgumentParser()
