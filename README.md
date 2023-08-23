@@ -1,14 +1,14 @@
 # cli-crt
 ## How to create a cli-tool with python?
-Well, in this reposistory I will answer through a example.
+Well I will answer the question with my project.
 
-## Panoramic of project
+## project overview
 This project was born because I was going to find a way to create files quickly with cmd so I make the creator file.
 
 The crt tool based on 4 option:
 1) pycrt, python creator
 2) jcrt, java creator
-3) jcrtcou, java course creator
+3) jcrtcou, java course creator(it is not necessary)
 4) cppcrt, cpp creator
 
 The crt tool use 4 argument:
@@ -17,7 +17,7 @@ The crt tool use 4 argument:
 3) -st(index to start of files), defualt value: 0
 4) -nm(name of files), defualt value: file
 
-In particular the 4 option create the files with built-in main structure of coding language. The jcrtcou option was created for my corrent java course.
+In particular the 4 option create the files with built-in main structure of coding language. 
 
 ## How to do create a cli tool with python:
 
@@ -58,7 +58,7 @@ Before to install the cli-tool you can write a selection block like this:
     elif args.names == 'CrtNormal':
         CrtNormal(args.nf, args.pwd, args.nm, args.st)
 ```
-
+This selection block allows to execute the function according to the typed option.
 
 Now you can use this command:
 
@@ -66,13 +66,13 @@ Now you can use this command:
 python crt.py [option] [argument]
 ```
 
-But if I want to use this:
+But if you want to use this:
 
 ```
 crt [option] [argument]
 ```
 
-In a new setup.py file you write this:
+You create new setup.py file and you have to write this:
 ```py
 from setuptools import find_packages, setup
 
@@ -87,8 +87,10 @@ setup(
 )
 ```
 
-And digit this in the project folder:
+Now you have to install your package locally:
 
 ```
 pip install -e .
 ```
+
+Finally you can use your cli-tool!
