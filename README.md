@@ -1,6 +1,5 @@
 # cli-crt
-## How to create a cli-tool with python?
-Well I will answer the question with my project.
+
 
 ## project overview
 This project was born because I was going to find a way to create files quickly with cmd so I make the creator file.
@@ -19,7 +18,7 @@ The crt tool use 4 argument:
 
 In particular the 4 option create the files with built-in main structure of coding language. 
 
-## How to do create a cli tool with python:
+## How i created the cli-tool for this project:
 
 Startly you can install argsparse package, ![install here](https://pypi.org/project/argparse/). You have to define the options of your cli tool as normal function. 
 After you have to define the main function. Inside the main function you have to create a object that it pointers to the ArgumentParser, this function will be use to add information of cli-tool.
